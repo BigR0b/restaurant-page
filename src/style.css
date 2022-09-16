@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+#content {
+  display: grid;
+  grid-template-rows: 0.5fr 7fr 0.5fr;
+  grid-template-columns: 1fr;
+  height: 100vh;
+  background: url(./wepik-photo-mode-2022816-1680.png);
+  background-size: cover;
+  gap: 30px;
+}
+#main {
+  border: 1px solid black;
+  width: 800px;
+  max-width: 60%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  justify-self: center;
+  /* frosted window effect */
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+}
+h1 {
+  text-align: center;
+}
+#main:last-child {
+  text-align: right;
+}
+
+nav {
+  background-color: aqua;
+}
+footer {
+  background-color: blanchedalmond;
+}
