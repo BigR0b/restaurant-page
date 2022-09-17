@@ -1,7 +1,7 @@
 import './style.css';
 import homepage, { main, mainHomepage } from './homepage';
 import mainMenu from './menu';
-
+import mainContact from './contact';
 homepage();
 mainHomepage();
 
@@ -26,4 +26,5 @@ menuTab.addEventListener('click', function () {
 });
 contactTab.addEventListener('click', function () {
   removeChildren(main);
+  mainContact();
 });
