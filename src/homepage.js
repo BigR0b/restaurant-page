@@ -63,10 +63,16 @@ navbar.appendChild(home);
 navbar.appendChild(menu);
 navbar.appendChild(contact);
 footer.appendChild(credit);
-main.appendChild(storeName);
-main.appendChild(quoteContainer);
-main.appendChild(hours);
-main.appendChild(location);
+
+const mainHomepage = () => {
+  main.appendChild(storeName);
+  main.appendChild(quoteContainer);
+  main.appendChild(hours);
+  main.appendChild(location);
+};
+
+mainHomepage();
+
 const homepage = () => {
   content.appendChild(navbar);
   content.appendChild(main);
@@ -74,3 +80,4 @@ const homepage = () => {
 };
 
 export default homepage;
+export { main as main, mainHomepage as mainHomepage };
