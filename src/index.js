@@ -1,5 +1,6 @@
 import './style.css';
 import homepage, { main, mainHomepage } from './homepage';
+import mainMenu from './menu';
 
 homepage();
 mainHomepage();
@@ -21,5 +22,8 @@ homeTab.addEventListener('click', function () {
 
 menuTab.addEventListener('click', function () {
   removeChildren(main);
+  mainMenu();
 });
-contactTab.addEventListener('click', mainHomepage);
+contactTab.addEventListener('click', function () {
+  removeChildren(main);
+});

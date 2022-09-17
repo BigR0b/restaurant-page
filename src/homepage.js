@@ -80,4 +80,4 @@ const homepage = () => {
 };
 
 export default homepage;
-export { main as main, mainHomepage as mainHomepage };
+export { main as main, mainHomepage as mainHomepage, newDiv as newDiv };
