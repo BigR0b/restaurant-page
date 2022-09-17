@@ -44,8 +44,25 @@ credit.setAttribute(
   'https://www.freepik.com/free-photo/cheese-pancake-with-honey_1247463.htm#query=pancake&position=4&from_view=search"'
 );
 credit.innerText = 'Background image by topntp26 on Freepik';
-footer.appendChild(credit);
 
+//Navbar tabs
+const home = newDiv();
+home.classList.add('tab');
+home.setAttribute('id', 'home');
+home.textContent = 'Home';
+const menu = newDiv();
+menu.classList.add('tab');
+menu.setAttribute('id', 'menu');
+menu.textContent = 'Menu';
+const contact = newDiv();
+contact.classList.add('tab');
+contact.setAttribute('id', 'contact');
+contact.textContent = 'Contact';
+
+navbar.appendChild(home);
+navbar.appendChild(menu);
+navbar.appendChild(contact);
+footer.appendChild(credit);
 main.appendChild(storeName);
 main.appendChild(quoteContainer);
 main.appendChild(hours);
